@@ -17,6 +17,7 @@
 3. go的动态库是编译成插件。
 4. golang中不存在while循环，使用for循环代替。
 5. rune可变，按照unicode输出。byte可变，按照utf-8输出。string不可变，当使用range遍历时，自动转换为[]rune。
+6. go语言中的switch-case在进入case语句后直接退出，不需要break，而C/C++语言中会继续向下执行。
 
 ```sh
 go build -buildmode=plugin plugin.go
